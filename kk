@@ -38,7 +38,7 @@ end
 LogsSection:NewLabel("will be updating soon!!!")
 LogsSection:NewLabel("!made by chillruinerv2!")
 --endohlogs
-MainSection:NewLabel(".gg/N7E9eKj2rb")
+MainSection:NewLabel("DISCORD GOT DELETED JOIN https://discord.gg/vXfTJCfFWM.")
 MainSection:NewLabel("Full script by ! EMPLIC#9999")
 MainSection:NewButton("Rejoin", "Rejoin the place.", function()
     local PlaceId = game.PlaceId
@@ -78,7 +78,7 @@ MainSection:NewButton("Kill Everyone", "kills everyone", function()
 end)
 
 MainSection:NewButton("copydiscord/chillruinerv2's discord", "copys the discord.", function()
-   setclipboard('https://discord.gg/jCsStxTJMc')
+   setclipboard('https://discord.gg/vXfTJCfFWM')
 end)
 
 MainSection:NewButton("Admin ui (Updated)", "Credits to EMPLIC 9999", function()
