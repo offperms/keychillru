@@ -38,7 +38,7 @@ end
 LogsSection:NewLabel("will be updating soon!!!")
 LogsSection:NewLabel("!made by chillruinerv2!")
 --endohlogs
-MainSection:NewLabel("DISCORD GOT DELETED JOIN https://discord.gg/vXfTJCfFWM.")
+MainSection:NewLabel("new discord:https://discord.gg/vXfTJCfFWM.")
 MainSection:NewLabel("Full script by ! EMPLIC#9999")
 MainSection:NewButton("Rejoin", "Rejoin the place.", function()
     local PlaceId = game.PlaceId
