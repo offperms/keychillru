@@ -180,7 +180,7 @@ MainSection:NewButton("Get all items (Requires 1k+ cash)", "Loads up Fates admin
     loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/Buy-all-stuff/main/Kill%20all%20-%20Emplic"))()
 end)
 
-MainSection:NewButton("Fates Admin (the script that kills all)", "Loads up Fates admin", function()
+MainSection:NewButton("Fates Admin (can get sword)", "Loads up Fates admin", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
     end)
 
