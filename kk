@@ -58,7 +58,7 @@ MainSection:NewButton("Kill Everyone", "kills everyone", function()
         local Handle = Tool:WaitForChild("Handle")
 
         for i = 1, 7, 1 do
-            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("join .gg/vXfTJCfFWM", "All")
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("join .gg/vXfTJCfFWM made by Emplic", "All")
         end
         
         while true do
