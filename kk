@@ -1,3 +1,4 @@
+
 local Players: Players = game:GetService("Players")
 local UserInputService: UserInputService = game:GetService("UserInputService")
 local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -10,7 +11,7 @@ local PlayerMouse: PlayerMouse = LocalPlayer:GetMouse()
 -- library
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))();
 -- windows
-local Window = Library.CreateLib("chillruinerv2", "BloodTheme")
+local Window = Library.CreateLib("🎃chill hub🎃", "Ocean")
 -- tabs
 local Tab = Window:NewTab("Main")
 local Tps = Window:NewTab("Tps")
@@ -36,7 +37,7 @@ end
 -- Logs
 
 LogsSection:NewLabel("will be updating soon!!!")
-LogsSection:NewLabel("!made by chillruinerv2!")
+LogsSection:NewLabel("updated")
 --endohlogs
 MainSection:NewLabel("new discord:https://discord.gg/vXfTJCfFWM.")
 MainSection:NewLabel("Full script by ! EMPLIC#9999")
@@ -45,6 +46,13 @@ MainSection:NewButton("Rejoin", "Rejoin the place.", function()
     local JobId = game.JobId
 
     return TeleportService:TeleportToPlaceInstance(PlaceId, JobId, LocalPlayer)
+end)
+MainSection:NewButton("kill roblox proccess", "kills roblox proccess", function()
+ game:shutdown()
+end)
+
+MainSection:NewKeybind("Toggle ui", "Toggles the ui", Enum.KeyCode.F, function()
+	Library:ToggleUI()
 end)
 
 MainSection:NewButton("Kill Everyone", "kills everyone", function()
@@ -117,7 +125,25 @@ MainSection:NewSlider("JumpPower", "Change your initial jump velocity.", 250, 50
     end
 end)
 
+MainSection:NewTextBox("buy item", "gets a item", function(txt)
+local args = {
+    [1] = "BuyItem",
+    [2] = txt
+}
 
+game:GetService("ReplicatedStorage").RE:FireServer(unpack(args))
+end)
+
+MainSection:NewTextBox("tp to player", "gets a item", function(txt)
+
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = txt
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+
+end)
 
 MainSection:NewButton("Reset Character", "Reset your player character to the last location.", function()
     local Character = LocalPlayer.Character
@@ -303,6 +329,8 @@ local TeleportToLocation; TeleportToLocation = function(CoordinateFrame: CFrame)
         end
     end
 end
+
+
 
 --#region
 
