@@ -9,9 +9,9 @@ local PlayerMouse: PlayerMouse = LocalPlayer:GetMouse()
 
 --#endregion
 -- library
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))();
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/plugss/custom-ui/main/EditedKavoUI"))();
 -- windows
-local Window = Library.CreateLib("🎃chill hub🎃", "Ocean")
+local Window = Library.CreateLib("_.chill hub ._", "DarkTheme")
 -- tabs
 local Tab = Window:NewTab("Main")
 local Tps = Window:NewTab("Tps")
