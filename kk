@@ -41,6 +41,9 @@ LogsSection:NewLabel("updated")
 --endohlogs
 MainSection:NewLabel("new discord:https://discord.gg/vXfTJCfFWM.")
 MainSection:NewLabel("Full script by ! EMPLIC#9999")
+MainSection:NewButton("Destroy group door", "kills roblox proccess", function()
+GroupDoor:Remove()
+end)
 MainSection:NewButton("Rejoin", "Rejoin the place.", function()
     local PlaceId = game.PlaceId
     local JobId = game.JobId
@@ -144,6 +147,7 @@ p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
 
 end)
+
 
 MainSection:NewButton("Reset Character", "Reset your player character to the last location.", function()
     local Character = LocalPlayer.Character
