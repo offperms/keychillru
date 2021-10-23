@@ -58,7 +58,7 @@ MainSection:NewKeybind("Toggle ui", "Toggles the ui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
 
-MainSection:NewButton("Kill Everyone", "kills everyone", function()
+MainSection:NewButton("Kill Everyone (Patched)", "kills everyone", function()
     task.spawn(function()
         local CoordinateFrame = CFrame.new(-8.65939236, 22.2416039, 51.2895126)
         local Character = game:GetService("Players").LocalPlayer.Character
