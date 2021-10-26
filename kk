@@ -11,7 +11,7 @@ local PlayerMouse: PlayerMouse = LocalPlayer:GetMouse()
 -- library
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/plugss/custom-ui/main/EditedKavoUI"))();
 -- windows
-local Window = Library.CreateLib("_.chill hub ._", "DarkTheme")
+local Window = Library.CreateLib("_.chill hub ._", "LightTheme")
 -- tabs
 local Tab = Window:NewTab("Main")
 local Tps = Window:NewTab("Tps")
@@ -41,7 +41,7 @@ LogsSection:NewLabel("updated")
 --endohlogs
 MainSection:NewLabel("new discord:https://discord.gg/vXfTJCfFWM.")
 MainSection:NewLabel("Full script by ! EMPLIC#9999")
-MainSection:NewButton("Destroy group door", "kills roblox proccess", function()
+MainSection:NewButton("Destroy group door", "Destorys group door", function()
 GroupDoor:Remove()
 end)
 MainSection:NewButton("Rejoin", "Rejoin the place.", function()
