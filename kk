@@ -13,12 +13,14 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/plugs
 -- windows
 local Window = Library.CreateLib("_.chill hub ._", "LightTheme")
 -- tabs
-local Tab = Window:NewTab("Main")
+local Tab = Window:NewTab("madeby chill hub devs")
 local Tps = Window:NewTab("Tps")
 local Player = Window:NewTab("Player")
+local Fun = Window:NewTab("Fun")
 local Logs = Window:NewTab("Logs")
 -- sections
 local TpsSection = Tps:NewSection("Tps")
+local FunSection = Fun:NewSection("Fun")
 local LogsSection = Logs:NewSection("Logs:")
 local MainSection = Tab:NewSection("Main")
 local PlayerSection = Player:NewSection("Player")
@@ -41,18 +43,14 @@ LogsSection:NewLabel("updated")
 --endohlogs
 MainSection:NewLabel("new discord:https://discord.gg/vXfTJCfFWM.")
 MainSection:NewLabel("Full script by ! EMPLIC#9999")
-MainSection:NewButton("Destroy group door", "Destorys group door", function()
-GroupDoor:Remove()
-end)
+
 MainSection:NewButton("Rejoin", "Rejoin the place.", function()
     local PlaceId = game.PlaceId
     local JobId = game.JobId
 
     return TeleportService:TeleportToPlaceInstance(PlaceId, JobId, LocalPlayer)
 end)
-MainSection:NewButton("kill roblox proccess", "kills roblox proccess", function()
- game:shutdown()
-end)
+
 
 MainSection:NewKeybind("Toggle ui", "Toggles the ui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
@@ -220,46 +218,7 @@ end)
 
 
 
-MainSection:NewButton("Break Audio", "Breakes the audio that is in the workspace.", function()
-   -- Decompiled with the Synapse X Luau decompiler.
 
-local v1 = { { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 } };
-local l__Audio__2 = workspace:WaitForChild("Audio");
-local v3 = Random.new():NextInteger(1, #v1);
-local l__RE__1 = game:GetService("ReplicatedStorage"):WaitForChild("RE");
-function playOnClients(p1)
-	l__RE__1:FireAllClients("Play", p1);
-end;
-while true do
-	wait();
-	sInfo = v1[v3];
-	l__Audio__2.SoundId = "rbxassetid://" .. tostring(sInfo[1]);
-	l__Audio__2:Play();
-	local u2 = false;
-	local u3 = false;
-	local v4 = l__Audio__2.Stopped:Connect(function()
-		u3 = true;
-	end);
-	while true do
-		wait();
-		if u2 then
-			break;
-		end;
-		if u3 then
-			break;
-		end;	
-	end;
-	l__Audio__2.Ended:Connect(function()
-		u2 = true;
-	end):Disconnect();
-	v4:Disconnect();
-	v3 = v3 + 1;
-	if #v1 < v3 then
-		v3 = 1;
-	end;
-end;
-
-end)
 
 MainSection:NewButton("Spam the Chat", "Spam the chat with a randomized capitalization quote.", function()
     local DefaultChatSystemChatEvents: Folder = ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents", math.huge)
@@ -305,8 +264,7 @@ game:GetService("ReplicatedStorage").RE:FireServer(unpack(args))
 
 end
 end)
-MainSection:NewButton("Invisible Script", "", function() return loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/bd62009d461c948d466222f4f9333f9420130fbb/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))(); end)
-MainSection:NewButton("Big Head (Rthro Head Required)", "Rthro head, From the packages, like danny.", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/sysGhost-aka-BiKode/BigHeadV2/main/BigHeadV2-r15", true))(); end)
+
 PlayerSection:NewButton("Run Flying Script (E)", "Press (E) to use.", function() if _G.flyscriptenabled then return; end; _G.flyscriptenabled = true; return loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/fly/main/lmao"))(); end)
 LocalPlayer.CharacterAdded:Connect(function() _G.flyscriptenabled = false; end)
 
@@ -377,7 +335,73 @@ end)
 TpsSection:NewButton("Teleport @ Sword Area", "tp", function()
     return TeleportToLocation(CFrame.new(-10,20,60))
 end)
+-- fun 
+FunSection:NewButton("Destroy group door", "Destorys group door", function()
+GroupDoor:Remove()
+end)
 
+FunSection:NewButton("kill roblox proccess", "kills roblox proccess", function()
+ game:shutdown()
+end)
+
+FunSection:NewButton("Ear Rape", "executes a earrape", function()
+while true do 
+    wait(2)
+
+print(game:GetService("SoundService").RespectFilteringEnabled)
+
+
+for _, sound in next, workspace:GetDescendants() do
+   if sound:IsA("Sound") then
+       sound:Play()
+   end
+end
+end
+end)
+
+FunSection:NewButton("Break Audio", "Breakes the audio thats is in the workspace.", function()
+   -- Decompiled with the Synapse X Luau decompiler.
+
+local v1 = { { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 }, { 1 } };
+local l__Audio__2 = workspace:WaitForChild("Audio");
+local v3 = Random.new():NextInteger(1, #v1);
+local l__RE__1 = game:GetService("ReplicatedStorage"):WaitForChild("RE");
+function playOnClients(p1)
+	l__RE__1:FireAllClients("Play", p1);
+end;
+while true do
+	wait();
+	sInfo = v1[v3];
+	l__Audio__2.SoundId = "rbxassetid://" .. tostring(sInfo[1]);
+	l__Audio__2:Play();
+	local u2 = false;
+	local u3 = false;
+	local v4 = l__Audio__2.Stopped:Connect(function()
+		u3 = true;
+	end);
+	while true do
+		wait();
+		if u2 then
+			break;
+		end;
+		if u3 then
+			break;
+		end;	
+	end;
+	l__Audio__2.Ended:Connect(function()
+		u2 = true;
+	end):Disconnect();
+	v4:Disconnect();
+	v3 = v3 + 1;
+	if #v1 < v3 then
+		v3 = 1;
+	end;
+end;
+
+end)
+
+FunSection:NewButton("Big Head (Rthro Head Required)", "Rthro head, From the packages, like danny.", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/sysGhost-aka-BiKode/BigHeadV2/main/BigHeadV2-r15", true))(); end)
+FunSection:NewButton("Invisible Script", "", function() return loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/bd62009d461c948d466222f4f9333f9420130fbb/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))(); end)
 --#endregion
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
