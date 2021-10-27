@@ -13,7 +13,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/plugs
 -- windows
 local Window = Library.CreateLib("_.chill hub ._", "LightTheme")
 -- tabs
-local Tab = Window:NewTab("madeby chill hub devs")
+local Tab = Window:NewTab("Main")
 local Tps = Window:NewTab("Tps")
 local Player = Window:NewTab("Player")
 local Fun = Window:NewTab("Fun")
@@ -22,7 +22,7 @@ local Logs = Window:NewTab("Logs")
 local TpsSection = Tps:NewSection("Tps")
 local FunSection = Fun:NewSection("Fun")
 local LogsSection = Logs:NewSection("Logs:")
-local MainSection = Tab:NewSection("Main")
+local MainSection = Tab:NewSection("madeby chill hub devs")
 local PlayerSection = Player:NewSection("Player")
 
 local function RandomCapitalization(txt)
