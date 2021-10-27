@@ -51,6 +51,13 @@ MainSection:NewButton("Rejoin", "Rejoin the place.", function()
     return TeleportService:TeleportToPlaceInstance(PlaceId, JobId, LocalPlayer)
 end)
 
+MainSection:NewButton("new ui peak", "Rejoin the place.", function()
+-- chillhub peak
+-- Happy hallowen
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/plugss/Chillhub/main/README.md'),true))()
+end)
+
+
 
 MainSection:NewKeybind("Toggle ui", "Toggles the ui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
