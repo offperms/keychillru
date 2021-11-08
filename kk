@@ -445,6 +445,14 @@ end)
 
 FunSection:NewButton("Ear Rape", "executes a earrape", function()
 while true do 
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+local caniputmyballsinyojaws = UserSettings():GetService("UserGameSettings")
+local yojawsballsinyojaws = settings()["Rendering"]
+
+caniputmyballsinyojaws.MasterVolume = 10000000000000000000000000000
+caniputmyballsinyojaws.SavedQualityLevel = 10000000000000000000000000000 
+yojawsballsinyojaws.QualityLevel = Enum.QualityLevel.Level01
     wait(2)
 
 print(game:GetService("SoundService").RespectFilteringEnabled)
